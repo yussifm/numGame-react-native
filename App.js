@@ -17,11 +17,12 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
  import Player from "./component/Player";
 import GameBoard from './component/GameBoard';
+import Menu from './component/Menu';
 
 export default function App() {
   return (
     <NavigationContainer>{
-     <GameBoard></GameBoard>
+     <Menu></Menu>
 
     }</NavigationContainer>
   );

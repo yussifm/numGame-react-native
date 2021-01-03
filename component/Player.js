@@ -6,6 +6,7 @@ let value = "";
 function Player(props) {
 	return (
 		<View style={styles.player}>
+            
 			<Text style={styles.button}>{props.num1}</Text>
 
 			<Text style={styles.button}>+</Text>
@@ -21,8 +22,11 @@ function Player(props) {
 
 const styles = new StyleSheet.create({
 	player: {
-		marginTop: 10,
-		flexDirection: "row",
+        marginTop: 15,
+      
+        flexDirection: "row",
+        justifyContent: "center",
+
 	},
 	button: {
 		shadowOffset: { width: 10, height: 10 },
@@ -32,12 +36,13 @@ const styles = new StyleSheet.create({
 		backgroundColor: "white",
 		padding: 20,
 		margin: 20,
-		borderRadius: 50,
+		borderRadius: 20,
 		textAlign: "center",
 		width: 70,
 		height: 70,
 		fontSize: 15,
-		color: "#000",
+        color: "#000",
+        backgroundColor: "pink",
 		fontWeight: "bold",
 	},
 
