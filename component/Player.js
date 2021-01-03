@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Text, TextInput } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 
 let gcolor = `rgb(22,220,110)`;
 let value = "";
@@ -12,9 +12,9 @@ function Player(props) {
 
 			<Text style={styles.button}>{props.num2}</Text>
 
-			<View style={styles.input}>
-				<TextInput style={styles.input} value={value} />
-			</View>
+			
+            
+           
 		</View>
 	);
 }
@@ -41,14 +41,7 @@ const styles = new StyleSheet.create({
 		fontWeight: "bold",
 	},
 
-	input: {
-		flexDirection: "column",
-		alignSelf: "center",
-		position: "absolute",
-		alignContent: "center",
-		left: 100,
-		top: 200,
-	},
+	
 });
 
 export default Player;
