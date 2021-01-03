@@ -22,7 +22,7 @@ import Menu from './component/Menu';
 export default function App() {
   return (
     <NavigationContainer>{
-     <Menu></Menu>
+      <GameBoard></GameBoard>
 
     }</NavigationContainer>
   );

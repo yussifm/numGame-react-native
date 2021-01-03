@@ -1,16 +1,21 @@
+// restyle the whole component
+
 import React, { Component } from "react";
 import { View, StyleSheet, SafeAreaView, Text, Button, TextInput } from "react-native";
 import Player from "./Player";
 
-let score = 0;
+
 let num1;
 let num2;
 
 let answer;
-let ans_input;
 
+let ans_input;   
+//  var for binding input value to
 export default function GameBoard() {
-          const [value, onChangeText] = React.useState('');
+
+    const [score, setScore] = React.useState(0);
+    
 
 	return (
 		<SafeAreaView style={styles.main}>
@@ -31,11 +36,12 @@ export default function GameBoard() {
 
              <View style={styles.input}>
                 <TextInput 
+                    // try to bind input value to ans_input 
                     placeholder='Enter answer 😊'
-                    ref={(el) => { ans_input = el; }}
+                    // ref={(el) => { ans_input = el; }}
                 
                     
-                    onChangeText={(ans_input) => value =onChangeText(text) }
+                    // onChangeText={(ans_input) => value =onChangeText(text) }
                     
                     
                     keyboardType="number-pad"
@@ -45,8 +51,12 @@ export default function GameBoard() {
             <Button style={styles.button}
                 title = "Submit your anwser"
                 onPress={() => {
-                    if (ans_input === answer) {
+                    //  having erro 
+                    // check to see if input value is equal to answer
+                    if (true) {
                         numenerator();
+                        alert('Correct Well done 😎😎');
+                        setScore(score++);
                     }
 
                     
@@ -90,10 +100,7 @@ const styles = new StyleSheet.create({
         fontWeight: "bold"
     },
     button: {
-        position: 'absolute',
-        bottom: 50,
-        width: 50,
-        borderRadius: 50,
+    //    style this button
         
         
     },

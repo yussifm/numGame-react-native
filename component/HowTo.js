@@ -6,11 +6,15 @@ function HowTo() {
         <SafeAreaView>
             <View>
                 <Text>
-                   Add 
+                    Welcome to the Magic Number game. Improve your Addition skills by anwsering the Questions below
+
+                   
                 </Text>
             </View>
        </SafeAreaView>
     )
 }
+
+// Add styling for the text 
 
 export default HowTo

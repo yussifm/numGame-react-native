@@ -22,20 +22,23 @@ function Menu() {
             >
                 <View>
 				<TouchableOpacity
-					onPress={() => alert("Hello, world!")}
+                        onPress={() => alert("Hello, world!")}
+                        // Navigate to GameBoard
 					style={styles.button}
 				>
 					<Text style={styles.buttonText}>Play</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
-					onPress={() => alert("Hello, world!")}
+                        onPress={() => alert("Hello, world!")}
+                         // Navigate to How to play 
 					style={styles.button}
 				>
 					<Text style={styles.buttonText}>How to Play</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
 					onPress={() => alert("Hello, world!")}
-					style={styles.button}
+                        style={styles.button}
+                         // Exit Game 
 				>
 					<Text style={styles.buttonText}>Exit</Text>
                     </TouchableOpacity>
