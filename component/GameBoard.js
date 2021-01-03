@@ -59,6 +59,7 @@ export default function GameBoard() {
                         alert('Correct Well done 😎😎');
                         setScore(score+1);
                     }
+                    // add an else statement here to prompt for user to enter answer
 
                     
                 }}
