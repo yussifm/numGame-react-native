@@ -53,10 +53,11 @@ export default function GameBoard() {
                 onPress={() => {
                     //  having erro 
                     // check to see if input value is equal to answer
+                    // regenerate input and the new question
                     if (true) {
                         numenerator();
                         alert('Correct Well done 😎😎');
-                        setScore(score++);
+                        setScore(score+1);
                     }
 
                     
